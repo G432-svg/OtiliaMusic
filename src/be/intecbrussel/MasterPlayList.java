@@ -6,16 +6,22 @@ import java.util.List;
 
 public class MasterPlayList {
     public static void main(String[] args) {
+        Song song = new Song("My heart will go on","Celine Dion","Titanic",364152);
+        PlayList songs = new PlayList("Alfa");
+
+        PlayList[] musicCollection;
+        musicCollection = new PlayList[0];
+
+        musicCollection = new PlayList[2];
 
 
-        Song song1 = new Song("Hotline Bling", "Drake", "Hotline Bing - Single", 267000);
-        Song song2 = new Song("What Do You Mean?", "Justin Bieber", "What Do You Mean? - Single", 207000);
-        Song song3 = new Song("Watch Me", "Silento", "Watch Me (Whip / Nae Nae) - Single", 185000);
-        Song song4 = new Song("679", "Fetty Wap ft. Remy Boyz", "Fetty Wap", 185000);
-        Song song5 = new Song("Can't Feel My Face", "The Weeknd", "Beauty Behind the Madness", 213000);
-        Song song6 = new Song("Good for You", "Selena Gomez ft. A$AP Rocky", "Good for You - Single", 221000);
+        Song song1 = new Song("Wonderful Tonight", "Eric Clapton", "After Midnight - Single", 267000);
+        Song song2 = new Song("She's like the wind", "Patrick Swayze ft. Wendy Frazer", "Wind - Single", 207000);
+        Song song3 = new Song("Wind of Change", "Scorpions", "The Millennium", 185000);
+        Song song4 = new Song("Send me an Angel", "Scorpions", "Best", 185000);
+        Song song5 = new Song("Mooi", "Marco Borsato", "Evenwicht", 213000);
+        Song song6 = new Song("Zwevend Naar't Geluk", "Jannes", "De nieuwe van...", 221000);
         Song song7 = new Song("If You", "Big Bang", "MADE", 264000);
-
         Song song8 = new Song("Celine Dion", "My heart will go on", "Titanic", 364152);
         Song song9 = new Song("Only You", "Kylie Minogue", "Christmas", 450000);
 
@@ -23,6 +29,12 @@ public class MasterPlayList {
         PlayList playList2 = new PlayList("Omega");
         PlayList playList3 = new PlayList("Delta");
 
-        MusicCollection musicCollection = new MusicCollection("Remix");
+
+
+
+
+
+
+
     }
 }

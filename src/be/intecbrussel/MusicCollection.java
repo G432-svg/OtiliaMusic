@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MusicCollection {
 
-    private String musicCollectionName;
+    private String musicCollectionName="Remix";
 
 
     private PlayList[] collection = new PlayList[2];
@@ -27,13 +27,29 @@ public class MusicCollection {
 //    }
 
     public void addPlayList (PlayList  playlistObject){
+        //incorrect, you try to add a playlist to a playlist, this is wrong
         playlistObject.addPlayList();
-
+        // iterate over all playlists in collection
+        for (int i = 0; i< collection.length; i++){
+            //check if playlist in array of playlists on position i == null
+            if(collection[i]==null){
+                //if playlist on position i == null then place playlistObject on position i of collection
+                collection[i]= playlistObject;
+                return;
+            }
+        }
     }
-
     public void removePlayList (PlayList  playlistObject){
-        Object songObject = null;
-        playlistObject.removeSong((Song) songObject);
+//        Object songObject = null;
+//        playlistObject.removeSong((Song) songObject);
+        for (int i = 0; i< collection.length; i++){
+            //check if playlist in array of playlists on position i == null
+            if(collection[i]==null){
+                //if playlist on position i == null then place playlistObject on position i of collection
+                collection[i]= playlistObject;
+                return;
+            }
+        }
     }
 
     public int countOfPlayListsInCollection(){

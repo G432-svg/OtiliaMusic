@@ -27,10 +27,6 @@ public class Music {
         PlayList playList3 = new PlayList("Delta");
 
 
-//        musicCollection.addPlayList("Omega");
-//        musicCollection.removePlayList("Alfa");
-//        musicCollection.countsOfPlayListsInCollection(playListsInCollection);
-
 
         Song playlist[] = songs.getPlaylist();
         Song song1 = new Song("Hotline Bling", "Drake", "Hotline Bing - Single", 267000);
@@ -54,18 +50,18 @@ public class Music {
 
 
 //        Song[] playlist;
-        System.out.println(playList1);
+        print(playList1.getPlaylist());
 
 
         songs.removeSong(song4);
         songs.removeSong(song7);
 
-        System.out.println(playList2);
+        print(playList1.getPlaylist());
 
         songs.addSong(song8);
         songs.addSong(song9);
 
-        System.out.println(playList3);
+        print(playList3.getPlaylist());
 
 
 
@@ -73,8 +69,6 @@ public class Music {
 
     private static void print(Song[] playlist) {
         printHeader();
-
-
 
         for (int i = 0; i < playlist.length; i++) {
             if (playlist[i] != null) {
